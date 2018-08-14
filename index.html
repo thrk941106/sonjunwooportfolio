@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <h1><a <a onclick="
+  <h1><a onclick="
     fetch('sonjunwoo').then(function(response){
       response.text().then(function(text){
         document.querySelector('article').innerHTML = text;
@@ -28,14 +28,14 @@
       });
     ">소개</a></li>
     <li><a onclick="
-      fetch('sonjunwoo').then(function(response){
+      fetch('record').then(function(response){
         response.text().then(function(text){
           document.querySelector('article').innerHTML = text;
         })
       });
     ">이력</a></li>
     <li><a onclick="
-      fetch('sonjunwoo').then(function(response){
+      fetch('rate').then(function(response){
         response.text().then(function(text){
           document.querySelector('article').innerHTML = text;
         })
