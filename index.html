@@ -28,14 +28,14 @@
       });
     ">소개</a></li>
     <li><a onclick="
-      fetch('record').then(function(response){
+      fetch('rate').then(function(response){
         response.text().then(function(text){
           document.querySelector('article').innerHTML = text;
         })
       });
     ">이력</a></li>
     <li><a onclick="
-      fetch('rate').then(function(response){
+      fetch('record').then(function(response){
         response.text().then(function(text){
           document.querySelector('article').innerHTML = text;
         })
