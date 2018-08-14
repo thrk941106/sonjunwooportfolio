@@ -7,17 +7,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <h1><a onclick="
-    fetch('sonjunwoo').then(function(response){
-      response.text().then(function(text){
-        document.querySelector('article').innerHTML = text;
-      })
-    });
-  ">손준우</a></h1>
+  <h1><a onclick="fetchpage('sonjunwoo');">손준우</a></h1>
 
-    <input type="button" value="night" onclick="
-    nightDatHHandler(this);
-    ">
+  <input type="button" value="night" onclick="nightDatHHandler(this);"> -> 화면을 반전시키는 버튼입니다.
   <br> 아래 항목을 클릭하시면 내용을 보실 수 있습니다.
   <ol>
     <li><a onclick="
@@ -34,16 +26,8 @@
         })
       });
     ">이력</a></li>
-    <li><a onclick="
-      fetch('record').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      });
-    ">활동 및 수상</a></li>
-    <li><a onclick="
-      fetchpage('rate');
-    ">About this page</a></li>
+    <li><a onclick="fetchpage('record');">활동 및 수상</a></li>
+    <li><a onclick="fetchpage('rate');"> About this page </a></li>
    </ol>
   <article>
   </article>
