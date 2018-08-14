@@ -19,14 +19,9 @@
         })
       });
     ">소개</a></li>
-    <li><a onclick="
-      fetch('rate').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      });
-    ">이력</a></li>
+    <li><a onclick="fetchpage('rate');">이력</a></li>
     <li><a onclick="fetchpage('record');">활동 및 수상</a></li>
+    <li><a onclick="fetchpage('rate');"> About Me </a></li>
     <li><a onclick="fetchpage('rate');"> About this page </a></li>
    </ol>
   <article>
