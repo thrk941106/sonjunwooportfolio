@@ -42,14 +42,19 @@
       });
     ">활동 및 수상</a></li>
     <li><a onclick="
-      fetch('sonjunwoo').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      });
+      fetchpage('rate');
     ">About this page</a></li>
+   </ol>
   <article>
   </article>
-  </ol>
+  <script>
+    function fetchpage(name) {
+      fetch(name).then(function(response){
+      response.text().then(function(text){
+        document.querySelector('article').innerHTML = text;
+        })
+      });
+    }
+  </script>
 </body>
 </html>
