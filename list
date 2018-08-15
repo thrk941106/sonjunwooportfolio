@@ -1,0 +1,5 @@
+<li><a onclick="fetchpage('sonjunwoo');">소개</a></li>
+<li><a onclick="fetchpage('rate');">이력</a></li>
+<li><a onclick="fetchpage('record');">활동 및 수상</a></li>
+<li><a onclick="fetchpage('rate');"> About Me </a></li>
+<li><a onclick="fetchpage('rate');"> About this page </a></li>
